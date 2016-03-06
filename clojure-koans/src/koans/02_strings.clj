@@ -13,7 +13,7 @@
   (= "Cool right?" (str "Cool " "right?"))
 
   "You can even get certain characters"
-  (= \C (get "Characters" "C"))
+  (= \C (get "Characters" 0))
 
   "Or even count the characters"
   (= 11 (count "Hello World"))
@@ -25,13 +25,13 @@
   (= "World" (subs "Hello World" 6 11))
 
   "How about joining together elements in a list?"
-  (= 123 (string/join '(1 2 3)))
+  (= "123" (string/join '(1 2 3)))
 
   "What if you wanted to separate them out?"
   (= "1, 2, 3" (string/join ", " '(1 2 3)))
 
   "Maybe you want to separate out all your lines"
-  (= [1 2 3] (string/split-lines "1\n2\n3"))
+  (= ["1" "2" "3"] (string/split-lines "1\n2\n3"))
 
   "You may want to make sure your words are backwards"
   (= "olleh" (string/reverse "hello"))

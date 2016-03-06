@@ -6,10 +6,10 @@
   (= '(1 2 3 4 5) (list 1 2 3 4 5))
 
   "They are Clojure seqs (sequences), so they allow access to the first"
-  (= 2 (first '(1 2 3 4 5)))
+  (= 1 (first '(1 2 3 4 5)))
 
   "As well as the rest"
-  (= (2 3 4 5) (rest '(1 2 3 4 5)))
+  (= '(2 3 4 5) (rest '(1 2 3 4 5)))
 
   "Count your blessings"
   (= 3 (count '(dracula dooku chocula)))

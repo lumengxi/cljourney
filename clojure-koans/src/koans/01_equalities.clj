@@ -12,7 +12,7 @@
   (= (+ 3 4) 7 (+ 2 5))
 
   "Some things may appear different, but be the same"
-  (= false (= 2 2/1))
+  (= true (= 2 2/1))
 
   "You cannot generally float to heavens of integers"
   (= false (= 2 2.0))
